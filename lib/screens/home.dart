@@ -8,6 +8,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[50],
       body: Column(
         children: [
           Padding(
@@ -17,7 +18,7 @@ class Home extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/home.jpg'),
+                  image: AssetImage('assets/home.png'),
                   fit: BoxFit.fill,
                 ),
               ),
