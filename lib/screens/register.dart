@@ -164,7 +164,48 @@ class _RegisterState extends State<Register> {
                   Text(
                     "----   Or Continue With   ----",
                     style: TextStyle(fontSize: 15),
-                  )
+                  ),
+                ],
+              ),
+              const Gap(10),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    height: MediaQuery.of(context).size.height / 20,
+                    width: MediaQuery.of(context).size.width / 10,
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage('assets/google_logo.png'),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                  const Gap(15),
+                  Container(
+                    height: MediaQuery.of(context).size.height / 15,
+                    width: MediaQuery.of(context).size.width / 8,
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage('assets/facebook_logo.png'),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const Gap(30),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text("Already have an account ? "),
+                  Text(
+                    "Log In",
+                    style: TextStyle(
+                      color: Colors.grey.shade600,
+                      decoration: TextDecoration.underline,
+                    ),
+                  ),
                 ],
               )
             ],
